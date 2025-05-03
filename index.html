@@ -1,36 +1,36 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS-APP 101</title>
-    <link rel="stylesheet" href="./index.css" />
-  </head>
-  <body>
-    <h2>Todo App</h2>
-    <form id="todoForm" novalidate>
-      <div class="form-input">
-        <label for="todo"></label>
-        <input
-          type="text"
-          name="todo"
-          id="todo"
-          placeholder="enter todo"
-          required
-          minlength="2"
-          maxlength="100"
-        />
-      </div>
-      <button>create todo</button>
-    </form>
-    <section class="display-todos">
-      <ol id="todosDisplay">
-        <li>Dance<span class="delete">❌</span></li>
-        <li>Eat<span class="delete">❌</span></li>
-        <li>Code<span class="delete">❌</span></li>
-      </ol>
-    </section>
 
-    <script type="module" src="./index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS-APP 101</title>
+  <link rel="stylesheet" href="./index.css" />
+
+</head>
+
+<body>
+  <h2>Todo App</h2>
+  <form id="todoForm" novalidate>
+    <div class="form-input">
+      <label for="todo"></label>
+      <input type="text" name="todo" id="todo" placeholder="enter todo" required minlength="2" maxlength="100" />
+    </div>
+    <div class="btn-container">
+      <button>create todo</button>
+      <button id="clear" type="reset">clear all</button>
+    </div>
+  </form>
+  <section class="display-todos">
+    <ol id="todosDisplay">
+      <li><i class="fa-regular fa-square"></i><span class="todoText">Dance</span><span class="delete">❌</span></li>
+      <li><i class="fa-regular fa-square"></i><span class="todoText">Eat</span><span class="delete">❌</span></li>
+      <li><i class="fa-regular fa-square"></i><span class="todoText">Code</span><span class="delete">❌</span></li>
+    </ol>
+  </section>
+
+  <script src="https://kit.fontawesome.com/64b3cfa8e8.js" crossorigin="anonymous"></script>
+  <script type="module" src="./todo.js"></script>
+</body>
+
 </html>

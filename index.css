@@ -1,16 +1,68 @@
-[data-name] {
-  color: red;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --primary-color: rgb(69, 25, 4);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: beige;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 2em;
 }
 
 .form-input {
+  input {
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 300px;
+  }
 }
 
-button {
-  margin-top: 8px;
+.btn-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+
+  button {
+    background-color: var(--primary-color);
+    color: beige;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    text-transform: capitalize;
+    border: 1px solid var(--primary-color);
+  }
 }
 
 .display-todos {
-  span.delete {
-    cursor: pointer;
+  margin: 0 auto;
+
+  li {
+    margin-left: -50px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
   }
+
+  span.delete {
+    background-color: var(--primary-color);
+  }
+}
+
+.strike {
+  text-decoration: line-through;
 }
